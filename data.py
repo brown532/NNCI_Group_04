@@ -5,7 +5,11 @@ import random
 
 class Population():
 	
-	def __init__(self,size=10,mean=0,variance=1.0,number_of_features=5):
+	def __init__(self,size=10,mean=0,variance=1.0,number_of_features=5,alpha = None):
+
+		if alpha != None:
+			size = int(alpha*number_of_features)
+
 		self.dataset = self.generate_attribute(size,mean,variance)
 
 		for x in range(0,number_of_features-1):
@@ -65,8 +69,6 @@ class Population():
 		plt.legend()
 		# Display a figure.
 		plt.show()
-
-
 
 # pop = Population(size=10 ,mean=0,variance=1.0,number_of_features=3)
 
