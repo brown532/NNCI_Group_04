@@ -1,5 +1,5 @@
 import numpy as np
-
+from data import *
 import matplotlib.pyplot as plt
 
 class Perceptron():
@@ -14,21 +14,23 @@ class Perceptron():
 
 		return e_mu
 
-	def fit(self,data,labels,epochs): #fit model to training data
+	def train(self,data,labels,epochs,c=0): #fit model to training data
 		#initialize weights
 		self.weights = np.zeros(data.shape[1])
 
+		# print(len(labels))
 
 		for epoch in range(0,epochs):
 			self.updated = False
 			# print("epoch "+str(epoch)+":")
 			for sample_index,sample in enumerate(data):
-				if self.__local_potential(sample,labels[sample_index]) <= 0:
+				# print(sample_index)
+				# print(sample)
+				# print(labels[sample_index])
+				# print("============================")
+				if self.__local_potential(sample,labels[sample_index]) <= c:
 					self.updated = True
 
-					# print("updating weights")
-
-					# print(self.weights)
 					self.weights = self.weights + ((sample * labels[sample_index]) / sample.shape)
 
 					# print("=====> ",self.weights)
@@ -38,3 +40,14 @@ class Perceptron():
 				return True
 
 		return False
+
+
+# x = Population(size= 9 , mean=0, variance=1.0, number_of_features=10)
+
+# model = Perceptron()
+
+# if model.train(data = x.dataset, labels = x.label, epochs = 100):
+# 	count += 1
+
+
+# print(count)
