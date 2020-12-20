@@ -23,22 +23,22 @@ The Perceptron can be described as the foundation to Artificial Neural Networks 
 <img src="https://render.githubusercontent.com/render/math?math=\alpha\implies"> P/N<br/>
 <img src="https://render.githubusercontent.com/render/math?math=c\implies"> Classification threshold (default: > 0)
 ## Experiment Description
-- **Experiment 1**: Comparison of <img src="https://render.githubusercontent.com/render/math?math=Q_{ls}"> and <img src="https://render.githubusercontent.com/render/math?math=P_{ls}">
+- **Experiment 1**: Comparison of <img src="https://render.githubusercontent.com/render/math?math=Q_{ls}"> and <img src="https://render.githubusercontent.com/render/math?math=P_{ls}"><br/>
 	This experiment compares the fraction of successful runs of the Perceptron with the probability that a dichotomy is linearly separable.<br/>
 Parameters: <img src="https://render.githubusercontent.com/render/math?math=0.75\leq\alpha\leq3.0,N=20,n_D=50,n_{max}=100"><br/>
 source file: `Qls_Pls.py`
 
-- **Experiment 2**:  Comparison of  different values of N
+- **Experiment 2**:  Comparison of  different values of N<br/>
 This experiment compares the effects that different values of N have on <img src="https://render.githubusercontent.com/render/math?math=Q_{ls}">.<br/>
 Parameters: <img src="https://render.githubusercontent.com/render/math?math=0.75\leq\alpha\leq3.0,N=[20,100,200], n_D=50,n_{max}=100"><br/>
 source file: `different_N.py`
 
-- **Experiment 3**: Comparison of different values of c
+- **Experiment 3**: Comparison of different values of c<br/>
 This experiment compares the effects that different values of c have on <img src="https://render.githubusercontent.com/render/math?math=Q_{ls}">.<br/>
 Parameters: <img src="https://render.githubusercontent.com/render/math?math=0.75\leq\alpha\leq3.0,N=20, c=[default, 0.05, 0.1,0.2], n_D=500,n_{max}=100"><br/>
 source file: `different_c.py`
 
-- **Experiment 4**: Effect of using a clamped input for the Perceptron
+- **Experiment 4**: Effect of using a clamped input for the Perceptron<br/>
 This experiment observes the effects that adding a clamped input (-1) for the Perceptron on the success of the training. It compares this technique to the default used in previous experiments which can not find solutions to inhomogeneous linearly separable dichotomies.<br/>
 Parameters: <img src="https://render.githubusercontent.com/render/math?math=0.75\leq\alpha\leq3.0,N=20, n_D=500,n_{max}=100"><br/>
 source file: `homogeneous.py`
