@@ -17,7 +17,7 @@ class Perceptron():
 		return e_mu
 
 	def plot_embedding_strengths(self):
-		print(self.embedding_strengths)
+		# print(self.embedding_strengths)
 		if self.embedding_strengths != None:
 			# plt.hist(self.embedding_strengths,bins=len(self.embedding_strengths)+1,label='μQ_ls')
 			x= np.arange(len(self.embedding_strengths))
@@ -30,9 +30,7 @@ class Perceptron():
 			ax.yaxis.set_major_locator(MaxNLocator(integer=True))
 
 			plt.xlabel("Sample (μ)")
-			plt.ylabel("Fraction of successful runs")
-
-			plt.legend(loc='upper right')
+			plt.ylabel("Embedding Strength ($X^μ$)")
 			plt.show()
 
 	def train(self,data,labels,epochs,c=0,homogeneous=True,use_embedding_strength=False): #fit model to training data
@@ -71,33 +69,23 @@ class Perceptron():
 
 
 			if self.updated == False:
-				print(self.weights)
-
-
-				if use_embedding_strength:
-					print(self.embedding_strengths)
-
-				print(epoch)
 				return True
 
 		return False
 
+for i in range(0,500):
+	x = Population(alpha=1.5, mean=0, variance=1, number_of_features=20)
 
-x = Population(alpha=1.8, mean=0, variance=1, number_of_features=20)
+	model = Perceptron()
 
-model = Perceptron()
+	if model.train(data = x.dataset, labels = x.label, epochs = 100,use_embedding_strength=True):
+		if max(model.embedding_strengths) > 85:
+			model.plot_embedding_strengths()
 
-model2 = Perceptron()
-# print(x.dataset)
-b = model.train(data = x.dataset, labels = x.label, epochs = 100,use_embedding_strength=True)
-print("===========================")
-# c = model2.train(data = x.dataset, labels = x.label, epochs = 100,use_embedding_strength=False)
-
-
-# model2.plot_embedding_strengths()
+# x=f'\N{GREEK SMALL LETTER GAMMA}={4.21:.2f} t/m\N{SUPERSCRIPT THREE}'
 
 
-# print("plotting model1")
+# y = 'Hey'
+# y+= f'\N{GREEK SMALL LETTER MU}'
 
-model.plot_embedding_strengths()
-
+# print(y)
