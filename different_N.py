@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from data import Population
 from Perceptron import Perceptron
 
-from test import *
 
 
 #parameters for experiments:
@@ -45,9 +44,6 @@ for number_of_features in different_N:
 			# print(x.dataset)
 			if model.train(data = x.dataset, labels = x.label, epochs = n_max):
 				Q_ls[-1] += 1
-
-
-		# P_ls.append(Pls(int(initial_alpha_value*number_of_features),number_of_features))
 
 		alpha_values.append(initial_alpha_value)
 		initial_alpha_value += increment

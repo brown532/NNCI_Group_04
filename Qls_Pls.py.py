@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from data import Population
 from Perceptron import Perceptron
 
-from test import *
+from Pls import *
 
 
 #parameters for experiments:
@@ -57,6 +57,3 @@ plt.ylabel("Fraction of successful runs")
 
 plt.legend(loc='upper right')
 plt.show()
-
-# print(Q_ls)
-# print(alpha_values)

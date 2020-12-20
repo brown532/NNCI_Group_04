@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 from data import Population
 from Perceptron import Perceptron
 
-from test import *
-
 
 #parameters for experiments:
 
