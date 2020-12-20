@@ -49,7 +49,7 @@ source file: `homogeneous.py`
 - **Experiment 2**
 <img src="results/differentN.png" width="400" >
 - **Experiment 3**
-<img src="results/differnt_c.png" width="400" >
+<img src="results/different_c.png" width="400" >
 - **Experiment 4**
 <img src="results/homogeneous.png" width="400" >
 
