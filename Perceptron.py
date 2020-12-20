@@ -72,20 +72,3 @@ class Perceptron():
 				return True
 
 		return False
-
-# for i in range(0,500):
-# 	x = Population(alpha=1.5, mean=0, variance=1, number_of_features=20)
-
-# 	model = Perceptron()
-
-# 	if model.train(data = x.dataset, labels = x.label, epochs = 100,use_embedding_strength=True):
-# 		if max(model.embedding_strengths) > 85:
-# 			model.plot_embedding_strengths()
-
-# x=f'\N{GREEK SMALL LETTER GAMMA}={4.21:.2f} t/m\N{SUPERSCRIPT THREE}'
-
-
-# y = 'Hey'
-# y+= f'\N{GREEK SMALL LETTER MU}'
-
-# print(y)
