@@ -30,7 +30,7 @@ source file: `Qls_Pls.py`
 
 - **Experiment 2**:  Comparison of  different values of N
 This experiment compares the effects that different values of N have on <img src="https://render.githubusercontent.com/render/math?math=Q_{ls}">.<br/>
-Parameters: $0.75\leq\alpha\leq3.0,N=[20,100,200], n_D=50,n_{max}=100$<br/>
+Parameters: <img src="https://render.githubusercontent.com/render/math?math=0.75\leq\alpha\leq3.0,N=[20,100,200], n_D=50,n_{max}=100"><br/>
 source file: `different_N.py`
 
 - **Experiment 3**: Comparison of different values of c
@@ -51,7 +51,7 @@ source file: `homogeneous.py`
 **Experiment 3**\
 <img src="results/different_c.png" width="400" >\
 **Experiment 4**\
-<img src="results/homogeneous.png" width="400" >\
+<img src="results/homogeneous.png" width="400" >
 
 ## Authors
 - [Brown Ogum](https://github.com/brown532)
