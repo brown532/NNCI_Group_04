@@ -44,13 +44,13 @@ Parameters: <img src="https://render.githubusercontent.com/render/math?math=0.75
 source file: `homogeneous.py`
 
 ## Results
-- **Experiment 1**:
+**Experiment 1**
 <img src="results/PlsQls.png" width="400" >
-- **Experiment 2**:
+**Experiment 2**
 <img src="results/differentN.png" width="400" >
-- **Experiment 3**:
+**Experiment 3**
 <img src="results/different_c.png" width="400" >
-- **Experiment 4**:
+**Experiment 4**
 <img src="results/homogeneous.png" width="400" >
 
 
