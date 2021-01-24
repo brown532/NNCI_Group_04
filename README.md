@@ -55,6 +55,5 @@ source file: `homogeneous.py`
 
 ## Authors
 - [Brown Ogum](https://github.com/brown532)
-- [Juanjo Guerrero](https://github.com/juanjoguerrero8)
 
 
